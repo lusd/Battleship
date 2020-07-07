@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en" dir="ltr">
+    <title>Battle Ships</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="stats">
+        <label for="remainingShips">Ships to destroy: </label>
+        <input
+          name="remainingShips"
+          id="remainingShips"
+          type="number"
+          disabled
+          value="10"
+        />
+        <label for="shots">Shots count: </label>
+        <input name="shots" id="shots" type="number" disabled value="0" />
+        <label for="lastShot">Last move: </label>
+        <input name="lastShot" id="lastShot" type="text" disabled value="" />
+        <label for="accuracy">Accuracy: </label>
+        <input name="accuracy" id="accuracy" type="text" disabled value="" />
+        <button class="newGame" id="newGame">New game</button>
+      </div>
+      <div class="battleField">
+        <div class="rows">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+          <span>D</span>
+          <span>E</span>
+          <span>F</span>
+          <span>G</span>
+          <span>H</span>
+          <span>I</span>
+          <span>J</span>
+        </div>
+        <div class="cols">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+        <canvas id="battlefield" width="300" height="300"></canvas>
+      </div>
+    </div>
+    <script src="battleship.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+#battlefield {
+  border: 1px solid rgb(254, 250, 203);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.5);
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.battleField {
+  width: 332px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+.rows {
+  margin-top: 5px;
+  width: 100%;
+  padding-left: 30px;
+  display: flex;
+  margin-left: auto;
+}
+
+.rows span {
+  display: block;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  width: 30px;
+  text-align: center;
+  font-weight: 200;
+  color: #555;
+}
+
+.cols {
+  width: 25px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  color: #555;
+}
+
+.cols span {
+  vertical-align: middle;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.newGame {
+  margin-top: 15px;
+}
+
+.stats label {
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  color: #555;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  margin-top: 10px;
+}
+
+.stats input {
+  border-color: rgb(189, 229, 231);
+  background-color: rgb(254, 250, 203);
+}
+
+.newGame {
+  border-color: rgb(189, 229, 231);
+  background-color: rgb(254, 250, 203);
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  color: #555;
+  font-size: 16px;
+  outline: 0;
+}
